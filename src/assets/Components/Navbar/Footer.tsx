@@ -1,4 +1,4 @@
-import { Text, Container, ActionIcon, Group, rem } from '@mantine/core';
+import { Text, Container, ActionIcon, Group, rem, Overlay } from '@mantine/core';
 import {  IconBrandInstagram, IconBrandFacebook, IconBrandGmail } from '@tabler/icons-react';
 
 import classes from './FooterLinks.module.css';
@@ -50,32 +50,37 @@ export function FooterLinks() {
 
   return (
     <footer className={classes.footer}>
+       <div className={classes.overlay}>
       <Container className={classes.inner}>
+      
         <div className={classes.logo}>
         <img src={logo} style={{height:"50px",marginTop:"20px"}} />
-          <Text size="xs" c="dimmed"  className={classes.description} >
+          <Text size="xs" className={classes.description} >
           Book your stay at New Pokhara Lodge and create unforgettable memories in Nepal’s breathtaking paradise.”
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
-        <Text c="dimmed" size="sm">
+        <Text  size="sm">
         Copyright © 2023 Hotel in Lakeside Pokhara | Powered by New Pokhara Lodge, Lakeside Pokhara Nepal.Telephone 977-9846107866
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon size="lg" color="white" variant="subtle">
             <IconBrandFacebook style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon size="lg" color="white" variant="subtle">
             <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon size="lg" color="white" variant="subtle">
             <IconBrandGmail style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
           </ActionIcon>
         </Group>
+        
       </Container>
+      </div>
     </footer>
+    
   );
 }

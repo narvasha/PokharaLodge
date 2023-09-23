@@ -10,11 +10,11 @@
     border-radius: 50px;
     */
     @mixin light{
-      background-color:#ffffff
+      background-color:black;
     
     }
     @mixin dark{
-      background-color: #1a1b1e;
+      background-color: white
     
     }
   }

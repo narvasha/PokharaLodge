@@ -8,10 +8,10 @@ export function Room() {
   return (
     <div style={{ padding:"60px"}}>
         <Title order={1}>
-            Narvasha
+        Our Best Rooms
         </Title>
-        <Text mt={10} mb={10}>
-            is a good girl.
+        <Text mt={10} mb={20}>
+        Plenty of services to assure your relaxation and comfortability.
         </Text>
     <SimpleGrid cols={4} spacing={"28px"}>
     <Card
