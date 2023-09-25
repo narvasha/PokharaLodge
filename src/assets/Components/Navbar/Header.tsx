@@ -20,6 +20,7 @@ import {
 import logo from "../../Images/hotel logo.webp";
 import { useDisclosure } from "@mantine/hooks";
 
+
 import {
   IconNotification,
   IconCode,
@@ -32,6 +33,7 @@ import {
 } from "@tabler/icons-react";
 import classes from "./HeaderMegaMenu.module.css";
 import { useState } from "react";
+
 
 export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
@@ -51,7 +53,7 @@ const changebackground=()=>{
     <Box pb={0}>
       <header className={header? classes.headerfixed:classes.header}>
         <Group justify="space-between" h="100%">
-          <img src={logo} style={{height:"50px",marginTop:"20px"}} />
+          <img src={logo} style={{height:"30px",marginTop:"20px",width:"330px",}} />
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <HoverCard
@@ -143,7 +145,7 @@ const changebackground=()=>{
                 <a href="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
-                      Branches
+                      About US
                     </Box>
                   </Center>
                 </a>
@@ -169,7 +171,7 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  Modern
+                 Services
                 </a>
                 <Divider style={{ borderColor: "black" }} />
                 <a
@@ -181,7 +183,7 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  City
+                Location
                 </a>
                 <Divider style={{ borderColor: "black" }} />
                 <a
@@ -193,20 +195,9 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  Beach
+                Prices
                 </a>
-                <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Island
-                </a>
+                
                 <Divider style={{ borderColor: "black" }} />
               </HoverCard.Dropdown>
             </HoverCard>
@@ -247,7 +238,7 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  Modern
+                 Deluxe
                 </a>
                 <Divider style={{ borderColor: "black" }} />
                 <a
@@ -259,7 +250,7 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  City
+                 Semi-Deluxe
                 </a>
                 <Divider style={{ borderColor: "black" }} />
                 <a
@@ -271,7 +262,7 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  Beach
+                 Standard
                 </a>
                 <Divider style={{ borderColor: "black" }} />
                 <a
@@ -283,7 +274,7 @@ const changebackground=()=>{
                     fontFamily: "vollkon",
                   }}
                 >
-                  Island
+                 Family
                 </a>
                 <Divider style={{ borderColor: "black" }} />
               </HoverCard.Dropdown>
@@ -296,77 +287,18 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <a href="Gallery" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
-                      Pages
+                      Gallery
                     </Box>
                   </Center>
                 </a>
               </HoverCard.Target>
-              <HoverCard.Dropdown
-                style={{
-                  overflow: "hidden",
-                  width: "150px ",
-                  display: "flex",
-                  flexDirection: "column",
-                  backgroundColor: "lightblue",
-                  borderRadius:0,
-                  padding:0
-                }}
-              >
-                <a
-                  href="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Modern
-                </a>
-                <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  City
-                </a>
-                <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Beach
-                </a>
-                <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Island
-                </a>
-                <Divider style={{ borderColor: "black" }} />
-              </HoverCard.Dropdown>
+              
             </HoverCard>
             <a href="#" className={classes.link}>
-              Blog
+              Reviews
             </a>
             <HoverCard
               width={600}
@@ -446,7 +378,7 @@ const changebackground=()=>{
               </HoverCard.Dropdown>
             </HoverCard>
             <button className={classes.button}>
-            <IconCalendarEvent style={{ marginRight:"10px",backgroundColor:"grey", borderRadius:"100px",padding:"5px",height:"36px",width:"36px"}}/>
+            <IconCalendarEvent style={{ marginRight:"10px",backgroundColor:"white", borderRadius:"100px",padding:"5px",height:"36px",width:"36px"}}/>
             BOOK NOW
           </button>
           </Group>

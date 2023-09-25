@@ -54,7 +54,7 @@ export function FooterLinks() {
       <Container className={classes.inner}>
       
         <div className={classes.logo}>
-        <img src={logo} style={{height:"50px",marginTop:"20px"}} />
+        <img src={logo} style={{height:"30px",marginTop:"20px",width:"330px",}} />
           <Text size="xs" className={classes.description} >
           Book your stay at New Pokhara Lodge and create unforgettable memories in Nepal’s breathtaking paradise.”
           </Text>

@@ -1,4 +1,4 @@
-import { IconEye, IconMessageCircle } from '@tabler/icons-react';
+import { IconEye, IconEyeDollar, IconFriends, IconMessageCircle, IconMoneybag, IconReportMoney, IconZoomMoney } from '@tabler/icons-react';
 import { Card, Text, Group, Center, rem, useMantineTheme, SimpleGrid, Title } from '@mantine/core';
 import classes from './Room.module.css';
 
@@ -7,10 +7,11 @@ export function Room() {
 
   return (
     <div style={{ padding:"60px"}}>
+     
         <Title order={1}>
         Our Best Rooms
         </Title>
-        <Text mt={10} mb={20}>
+        <Text mt={10} mb={10}>
         Plenty of services to assure your relaxation and comfortability.
         </Text>
     <SimpleGrid cols={4} spacing={"28px"}>
@@ -20,14 +21,14 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
-      href="https://mantine.dev/"
+    //   href="https://mantine.dev/"
       target="_blank"
     >
       <div
         className={classes.image}
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)',
+            'url(https://www.pokharalodge.com/wp-content/uploads/2019/04/deluxe-room-pokhara-lodge.jpg)',
         }}
       />
       <div className={classes.overlay} />
@@ -35,34 +36,34 @@ export function Room() {
       <div className={classes.content}>
         <div>
           <Text size="lg" className={classes.title} fw={500}>
-            Journey to Swiss Alps
+          Deluxe Room
           </Text>
 
           <Group justify="space-between" gap="xs">
             <Text size="sm" className={classes.author}>
-              Robert Gluesticker
+            With Mountatin Views
             </Text>
 
             <Group gap="lg">
               <Center>
-                <IconEye
+                <IconReportMoney
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
-                  7847
+                $35-$45
                 </Text>
               </Center>
               <Center>
-                <IconMessageCircle
+                {/* <IconFriends
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
                   5
-                </Text>
+                </Text> */}
               </Center>
             </Group>
           </Group>
@@ -75,14 +76,14 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
-      href="https://mantine.dev/"
+    //   href="https://mantine.dev/"
       target="_blank"
     >
       <div
         className={classes.image}
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)',
+            'url(https://www.pokharalodge.com/wp-content/uploads/2021/03/family-room.jpg)',
         }}
       />
       <div className={classes.overlay} />
@@ -90,34 +91,34 @@ export function Room() {
       <div className={classes.content}>
         <div>
           <Text size="lg" className={classes.title} fw={500}>
-            Journey to Swiss Alps
+          Family Room
           </Text>
 
           <Group justify="space-between" gap="xs">
             <Text size="sm" className={classes.author}>
-              Robert Gluesticker
+            With Mountatin Views
             </Text>
 
             <Group gap="lg">
               <Center>
-                <IconEye
+                <IconReportMoney
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
-                  7847
+                $25
                 </Text>
               </Center>
               <Center>
-                <IconMessageCircle
+                {/* <IconFriends
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
                   5
-                </Text>
+                </Text> */}
               </Center>
             </Group>
           </Group>
@@ -130,14 +131,14 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
-      href="https://mantine.dev/"
+      href="#"
       target="_blank"
     >
       <div
         className={classes.image}
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)',
+            'url(https://www.pokharalodge.com/wp-content/uploads/2019/05/standard-double-twin-room-2.jpg)',
         }}
       />
       <div className={classes.overlay} />
@@ -145,34 +146,34 @@ export function Room() {
       <div className={classes.content}>
         <div>
           <Text size="lg" className={classes.title} fw={500}>
-            Journey to Swiss Alps
+          Standard Room
           </Text>
 
           <Group justify="space-between" gap="xs">
             <Text size="sm" className={classes.author}>
-              Robert Gluesticker
+            With Mountatin Views
             </Text>
 
             <Group gap="lg">
               <Center>
-                <IconEye
+                <IconReportMoney
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
-                  7847
+                $14-$22
                 </Text>
               </Center>
               <Center>
-                <IconMessageCircle
+                {/* <IconFriends
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
                   5
-                </Text>
+                </Text> */}
               </Center>
             </Group>
           </Group>
@@ -185,14 +186,14 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
-      href="https://mantine.dev/"
+    //   href="https://mantine.dev/"
       target="_blank"
     >
       <div
         className={classes.image}
         style={{
           backgroundImage:
-            'url(https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80)',
+            'url(https://www.pokharalodge.com/wp-content/uploads/2019/05/room-16.jpg)',
         }}
       />
       <div className={classes.overlay} />
@@ -200,34 +201,34 @@ export function Room() {
       <div className={classes.content}>
         <div>
           <Text size="lg" className={classes.title} fw={500}>
-            Journey to Swiss Alps
+          Semi-Deluxe Room
           </Text>
 
           <Group justify="space-between" gap="xs">
             <Text size="sm" className={classes.author}>
-              Robert Gluesticker
+            With Mountatin Views
             </Text>
 
             <Group gap="lg">
               <Center>
-                <IconEye
+                <IconReportMoney
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
-                  7847
+                $18-$25
                 </Text>
               </Center>
               <Center>
-                <IconMessageCircle
+                {/* <IconFriends
                   style={{ width: rem(16), height: rem(16) }}
                   stroke={1.5}
                   color={theme.colors.dark[2]}
                 />
                 <Text size="sm" className={classes.bodyText}>
                   5
-                </Text>
+                </Text> */}
               </Center>
             </Group>
           </Group>

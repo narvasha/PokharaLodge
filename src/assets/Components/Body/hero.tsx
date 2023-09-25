@@ -1,6 +1,6 @@
 import { Overlay, Container, Title, Button, Text, Grid, GridCol, Paper, Box } from '@mantine/core';
 import classes from './HeroContentLeft.module.css';
-import garden from "../../Images/Garden.jpg";
+import hotel from "../../Images/hotel.jpg";
 export function HeroContentLeft() {
   return (
     <div className={classes.hero}>
@@ -16,17 +16,20 @@ export function HeroContentLeft() {
         <Box className={classes.box}>
         <Title className={classes.title}>NEW POKHARA LODGE </Title>
         <Text className={classes.description} size="xl" mt="xl">
-        Hotel Rooms Available from Just $10 -per night . Book Now!".
+        An ideal Hotel for peace loving travelers since 1994. Book Now!".
         </Text>
 
         <Button variant="gradient" size="xl" radius="xl" className={classes.control}>
           BOOK NOW
         </Button>
+        
+        
         </Box>
         </Container>
       
-      <img className={classes.image} src={garden} /> 
+      <img className={classes.image} src={hotel} /> 
       
     </div>
+    
   );
 }
