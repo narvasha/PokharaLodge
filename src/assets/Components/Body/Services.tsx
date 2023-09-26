@@ -131,7 +131,7 @@ export default function BestServices() {
                   padding: "20px",
                 }}
               >
-                <a href="#">
+                <a href="https://www.tripadvisor.com/Hotel_Review-g293891-d522567-Reviews-New_Pokhara_Lodge-Pokhara_Gandaki_Zone_Western_Region.html">
                   {" "}
                   <Image src={tripadvisor} />
                   <Text className={classes.word}>Book Now</Text>{" "}
@@ -149,7 +149,7 @@ export default function BestServices() {
               >
                 {/* <Text className={classes.count}>3</Text>
                 <Text className={classes.word}>Meeting Rooms</Text> */}
-                <a  href="#"
+                <a  href="https://www.agoda.com/new-pokhara-lodge/hotel/pokhara-np.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1719652&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2023-10-5&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=16&los=1&searchrequestid=525c1f69-3f16-427d-84cd-b8b342e25863"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -177,7 +177,7 @@ export default function BestServices() {
               >
                 {/* <Text className={classes.count}>18</Text>
                 <Text className={classes.word}>Spa</Text> */}
-                <a href="#" style={{
+                <a href="https://www.booking.com/Share-MD44Ltw" style={{
                       display: "flex",
                       justifyContent: "center",
                       flexDirection: "column",
@@ -202,7 +202,7 @@ export default function BestServices() {
               >
                 {/* <Text className={classes.count}>2</Text>
                 <Text className={classes.word}>Restaurants</Text> */}
-                <a href="#"
+                <a href="https://www.hostelworld.com/pwa/hosteldetails.php/New-Pokhara-Lodge/Pokhara/3590?from=2023-09-27&to=2023-09-30&guests=2"
                 style={{
                   display: "flex",
                   justifyContent: "center",
