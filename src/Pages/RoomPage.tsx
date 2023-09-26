@@ -9,6 +9,10 @@ import {
 } from "@mantine/core";
 import { Link } from "react-router-dom";
 import garden from "../assets/Images/Garden.jpg";
+import deluxe from "../assets/Images/deluxroom.jpg"
+import standard from "../assets/Images/standardroom.jpg"
+import semideluxe from "../assets/Images/semideluxe.jpg"
+import family from "../assets/Images/family.jpg"
 import {
   FaBath,
   FaChevronRight,
@@ -77,7 +81,7 @@ export default function RoomPage() {
                   position: "relative",
                   width: "100%",
                   padding: "0",
-                  backgroundImage: `url(${garden})`,
+                  backgroundImage: `url(${deluxe})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -115,7 +119,7 @@ export default function RoomPage() {
                     fontWeight: 600,
                   }}
                 >
-                  Deluxe Room
+                  Family Room
                 </h2>
                 <p
                   style={{
@@ -326,7 +330,7 @@ export default function RoomPage() {
                   >
                     per night
                   </span>
-                  <a style={{ textDecoration: "none" }}>
+                  <Link style={{ textDecoration: "none" }} to={"/deluxe"}>
                     <button
                       style={{
                         border: "1px solid #efefef",
@@ -344,7 +348,7 @@ export default function RoomPage() {
                         cursor: "pointer",
                       }}
                     >
-                      BOOK NOW
+                      More Details
                       <span
                         style={{
                           backgroundColor: "#deb666",
@@ -365,7 +369,7 @@ export default function RoomPage() {
                         <FaChevronRight/>
                       </span>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </Grid.Col>
             </Grid>
@@ -389,7 +393,7 @@ export default function RoomPage() {
                   position: "relative",
                   width: "100%",
                   padding: "0",
-                  backgroundImage: `url(${garden})`,
+                  backgroundImage: `url(${standard})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -427,7 +431,7 @@ export default function RoomPage() {
                     fontWeight: 600,
                   }}
                 >
-                  Deluxe Room
+                 Standard Room
                 </h2>
                 <p
                   style={{
@@ -472,25 +476,7 @@ export default function RoomPage() {
                       />
                     </div>
                    
-                    <div
-                      style={{
-                        border: "1px solid #efefef",
-                        borderRadius: "8px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flexShrink: 0,
-                        width: "35px",
-                        height: "35px",
-                        lineHeight: "35px",
-                        cursor: "pointer",
-                        verticalAlign: "middle",
-                      }}
-                    >
-                      <FaSnowflake
-                        style={{ fontSize: "15px", color: "#6D7991" }}
-                      />
-                    </div>
+                    
                     <div
                       style={{
                         border: "1px solid #efefef",
@@ -623,7 +609,7 @@ export default function RoomPage() {
                   >
                     <strong>
                       <span>Rs.</span>
-                      <span style={{ fontSize: "24px" }}>5000</span>
+                      <span style={{ fontSize: "24px" }}>1500</span>
                     </strong>
                   </span>
                   <span
@@ -656,7 +642,7 @@ export default function RoomPage() {
                         cursor: "pointer",
                       }}
                     >
-                      BOOK NOW
+                      More Details
                       <span
                         style={{
                           backgroundColor: "#deb666",
@@ -701,7 +687,7 @@ export default function RoomPage() {
                   position: "relative",
                   width: "100%",
                   padding: "0",
-                  backgroundImage: `url(${garden})`,
+                  backgroundImage: `url(${semideluxe})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -739,7 +725,7 @@ export default function RoomPage() {
                     fontWeight: 600,
                   }}
                 >
-                  Deluxe Room
+                  Semi-Deluxe Room
                 </h2>
                 <p
                   style={{
@@ -784,25 +770,6 @@ export default function RoomPage() {
                       />
                     </div>
                    
-                    <div
-                      style={{
-                        border: "1px solid #efefef",
-                        borderRadius: "8px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flexShrink: 0,
-                        width: "35px",
-                        height: "35px",
-                        lineHeight: "35px",
-                        cursor: "pointer",
-                        verticalAlign: "middle",
-                      }}
-                    >
-                      <FaSnowflake
-                        style={{ fontSize: "15px", color: "#6D7991" }}
-                      />
-                    </div>
                     <div
                       style={{
                         border: "1px solid #efefef",
@@ -935,7 +902,7 @@ export default function RoomPage() {
                   >
                     <strong>
                       <span>Rs.</span>
-                      <span style={{ fontSize: "24px" }}>5000</span>
+                      <span style={{ fontSize: "24px" }}>2000</span>
                     </strong>
                   </span>
                   <span
@@ -968,7 +935,7 @@ export default function RoomPage() {
                         cursor: "pointer",
                       }}
                     >
-                      BOOK NOW
+                      More Details
                       <span
                         style={{
                           backgroundColor: "#deb666",
@@ -1013,7 +980,7 @@ export default function RoomPage() {
                   position: "relative",
                   width: "100%",
                   padding: "0",
-                  backgroundImage: `url(${garden})`,
+                  backgroundImage: `url(${family})`,
                   backgroundSize: "cover",
                 }}
               >
@@ -1051,7 +1018,7 @@ export default function RoomPage() {
                     fontWeight: 600,
                   }}
                 >
-                  Deluxe Room
+                  Family Room
                 </h2>
                 <p
                   style={{
@@ -1096,25 +1063,6 @@ export default function RoomPage() {
                       />
                     </div>
                    
-                    <div
-                      style={{
-                        border: "1px solid #efefef",
-                        borderRadius: "8px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flexShrink: 0,
-                        width: "35px",
-                        height: "35px",
-                        lineHeight: "35px",
-                        cursor: "pointer",
-                        verticalAlign: "middle",
-                      }}
-                    >
-                      <FaSnowflake
-                        style={{ fontSize: "15px", color: "#6D7991" }}
-                      />
-                    </div>
                     <div
                       style={{
                         border: "1px solid #efefef",
@@ -1247,7 +1195,7 @@ export default function RoomPage() {
                   >
                     <strong>
                       <span>Rs.</span>
-                      <span style={{ fontSize: "24px" }}>5000</span>
+                      <span style={{ fontSize: "24px" }}>2500</span>
                     </strong>
                   </span>
                   <span
@@ -1280,7 +1228,7 @@ export default function RoomPage() {
                         cursor: "pointer",
                       }}
                     >
-                      BOOK NOW
+                      More Details
                       <span
                         style={{
                           backgroundColor: "#deb666",

@@ -8,6 +8,8 @@ import { FooterLinks } from "./assets/Components/Navbar/Footer";
 import HomePage from "./Pages/HomePage";
 import RoomPage from "./Pages/RoomPage";
 import { Errorpage } from "./Pages/ErrorPage";
+import { Deluxe } from "./Pages/Deluxe";
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
             <Route path="/">
               <Route index element={<HomePage/>} />
               <Route path= "rooms" element={<RoomPage/>}/>
+              <Route path= "deluxe" element={<Deluxe/>}/>
             </Route>
             <Route path="*" element={<Errorpage/>}/>
               
