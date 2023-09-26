@@ -119,7 +119,7 @@ export default function RoomPage() {
                     fontWeight: 600,
                   }}
                 >
-                  Family Room
+                  Deluxe Room
                 </h2>
                 <p
                   style={{
@@ -917,7 +917,8 @@ export default function RoomPage() {
                   >
                     per night
                   </span>
-                  <a style={{ textDecoration: "none" }}>
+                  <Link to="/semideluxe"style={{ textDecoration: "none" }}>
+                  
                     <button
                       style={{
                         border: "1px solid #efefef",
@@ -936,6 +937,7 @@ export default function RoomPage() {
                       }}
                     >
                       More Details
+                      
                       <span
                         style={{
                           backgroundColor: "#deb666",
@@ -956,7 +958,8 @@ export default function RoomPage() {
                         <FaChevronRight/>
                       </span>
                     </button>
-                  </a>
+                    
+                  </Link>
                 </div>
               </Grid.Col>
             </Grid>

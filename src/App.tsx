@@ -9,6 +9,7 @@ import HomePage from "./Pages/HomePage";
 import RoomPage from "./Pages/RoomPage";
 import { Errorpage } from "./Pages/ErrorPage";
 import { Deluxe } from "./Pages/Deluxe";
+import { SemiDeluxe } from "./Pages/SemiDeluxe";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route index element={<HomePage/>} />
               <Route path= "rooms" element={<RoomPage/>}/>
               <Route path= "deluxe" element={<Deluxe/>}/>
+              <Route path= "semideluxe" element={<SemiDeluxe/>}/>
             </Route>
             <Route path="*" element={<Errorpage/>}/>
               
