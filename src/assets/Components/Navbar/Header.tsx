@@ -33,6 +33,7 @@ import {
 } from "@tabler/icons-react";
 import classes from "./HeaderMegaMenu.module.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export function HeaderMegaMenu() {
@@ -53,7 +54,7 @@ const changebackground=()=>{
     <Box pb={0}>
       <header className={header? classes.headerfixed:classes.header}>
         <Group justify="space-between" h="100%">
-          <img src={logo} style={{height:"30px",marginTop:"20px",width:"330px",}} />
+          <img src={logo} style={{height:"30px",width:"330px",}} />
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <HoverCard
@@ -64,13 +65,13 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <Link to="/" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Home
                     </Box>
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
 
               <HoverCard.Dropdown
@@ -84,8 +85,8 @@ const changebackground=()=>{
                   padding:0
                 }}
               >
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -94,10 +95,10 @@ const changebackground=()=>{
                   }}
                 >
                   Modern
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -106,10 +107,10 @@ const changebackground=()=>{
                   }}
                 >
                   City
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -118,10 +119,10 @@ const changebackground=()=>{
                   }}
                 >
                   Beach
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -130,7 +131,7 @@ const changebackground=()=>{
                   }}
                 >
                   Island
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
               </HoverCard.Dropdown>
             </HoverCard>
@@ -142,13 +143,13 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <Link to="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       About US
                     </Box>
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
 
               <HoverCard.Dropdown
@@ -162,8 +163,8 @@ const changebackground=()=>{
                   padding:0
                 }}
               >
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -172,10 +173,10 @@ const changebackground=()=>{
                   }}
                 >
                  Services
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -184,10 +185,10 @@ const changebackground=()=>{
                   }}
                 >
                 Location
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -196,7 +197,7 @@ const changebackground=()=>{
                   }}
                 >
                 Prices
-                </a>
+                </Link>
                 
                 <Divider style={{ borderColor: "black" }} />
               </HoverCard.Dropdown>
@@ -209,13 +210,13 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <Link to="/rooms" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Rooms
                     </Box>
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
 
               <HoverCard.Dropdown
@@ -229,8 +230,8 @@ const changebackground=()=>{
                   padding:0
                 }}
               >
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -239,10 +240,10 @@ const changebackground=()=>{
                   }}
                 >
                  Deluxe
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -251,10 +252,10 @@ const changebackground=()=>{
                   }}
                 >
                  Semi-Deluxe
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -263,10 +264,10 @@ const changebackground=()=>{
                   }}
                 >
                  Standard
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -275,7 +276,7 @@ const changebackground=()=>{
                   }}
                 >
                  Family
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
               </HoverCard.Dropdown>
             </HoverCard>
@@ -287,19 +288,19 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <a href="Gallery" className={classes.link}>
+                <Link to="Gallery" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Gallery
                     </Box>
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
               
             </HoverCard>
-            <a href="#" className={classes.link}>
+            <Link to="#" className={classes.link}>
               Reviews
-            </a>
+            </Link>
             <HoverCard
               width={600}
               position="bottom"
@@ -308,13 +309,13 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <Link to="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       Contact Us
                     </Box>
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
               <HoverCard.Dropdown
                 style={{
@@ -327,8 +328,8 @@ const changebackground=()=>{
                   padding:0
                 }}
               >
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -337,10 +338,10 @@ const changebackground=()=>{
                   }}
                 >
                   Modern
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -349,10 +350,10 @@ const changebackground=()=>{
                   }}
                 >
                   City
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -361,10 +362,10 @@ const changebackground=()=>{
                   }}
                 >
                   Beach
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   style={{
                     textDecoration: "none",
                     color: "black",
@@ -373,7 +374,7 @@ const changebackground=()=>{
                   }}
                 >
                   Island
-                </a>
+                </Link>
                 <Divider style={{ borderColor: "black" }} />
               </HoverCard.Dropdown>
             </HoverCard>
@@ -405,9 +406,9 @@ const changebackground=()=>{
         <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
 
-          <a href="#" className={classes.link}>
+          <Link to="#" className={classes.link}>
             Home
-          </a>
+          </Link>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <Box component="span" mr={5}>
@@ -420,12 +421,12 @@ const changebackground=()=>{
             </Center>
           </UnstyledButton>
           <Collapse in={linksOpened}>{}</Collapse>
-          <a href="#" className={classes.link}>
+          <Link to="#" className={classes.link}>
             Learn
-          </a>
-          <a href="#" className={classes.link}>
+          </Link>
+          <Link to="#" className={classes.link}>
             Academy
-          </a>
+          </Link>
 
           <Divider my="sm" />
 

@@ -1,37 +1,35 @@
-
 import "@mantine/core/styles.css";
 import { MantineProvider } from "@mantine/core";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HeaderMegaMenu } from "./assets/Components/Navbar/Header";
 import { Theme } from "./assets/Components/Navbar/Theme";
 import { FooterLinks } from "./assets/Components/Navbar/Footer";
-import {  HeroContentLeft } from "./assets/Components/Body/hero";
-import { Room } from "./assets/Components/Body/Rooms";
-import { Services } from "./assets/Components/Body/Services";
-import { Gallery } from "./assets/Components/Body/gallery";
 
+import HomePage from "./Pages/HomePage";
+import RoomPage from "./Pages/RoomPage";
+import { Errorpage } from "./Pages/ErrorPage";
 
 function App() {
-  
-
   return (
-    
     <>
-     <MantineProvider>
-
-<HeaderMegaMenu/>
-<HeroContentLeft/>
-
-
-<Room/>
-
-
-<Theme/>
-<Gallery/>
-<FooterLinks/>
-      </MantineProvider> 
+      <MantineProvider>
+        <Router>
+           <HeaderMegaMenu />
+          <Routes>
+            <Route path="/">
+              <Route index element={<HomePage/>} />
+              <Route path= "rooms" element={<RoomPage/>}/>
+            </Route>
+            <Route path="*" element={<Errorpage/>}/>
+              
+          </Routes>
+          <Theme/>
+        <FooterLinks /> 
+        </Router>
+       
+      </MantineProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

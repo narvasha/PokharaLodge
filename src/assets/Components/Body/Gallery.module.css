@@ -6,8 +6,18 @@
       box-shadow: var(--mantine-shadow-md);
     }
   }
-  
-  .title {
-    font-family: 'Greycliff CF', var(--mantine-font-family);
-    font-weight: bold;
-  }
+  .title{
+  color: #474747;
+  font-family:vollxin;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.text{
+  color: #878D8D;
+  font-family:vollxin;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4em;
+}

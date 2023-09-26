@@ -2,7 +2,7 @@
     height: rem(90px);
     padding-left: 80px;
     padding-right: 80px;
-    border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    /* border-bottom: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4)); */
     font-family: vollkon;
 
     @mixin light{
@@ -10,7 +10,7 @@
     
     }
     @mixin dark{
-      background-color:white
+      background-color:#1a1b1e;
     
     }
 
@@ -78,7 +78,7 @@ animation: smoothScroll 2s forwards;
   }
   
   .dropdownFooter {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
+    background-color: light-dark(var(--mantine-color-white-0), var(--mantine-color-dark-7));
     margin: calc(var(--mantine-spacing-md) * -1);
     margin-top: var(--mantine-spacing-sm);
     padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
@@ -86,8 +86,8 @@ animation: smoothScroll 2s forwards;
     border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
   }
   .button{
-  background:#c02b23;
-  border-color:rgb(5, 5, 5);
+  background:#0074dc;
+  
   cursor: pointer;
   color: #000000;
   outline: none !important;
@@ -98,8 +98,8 @@ animation: smoothScroll 2s forwards;
   font-weight: 600;
   line-height: 24px;
   border-radius: 4px;
-  padding: 2px 20px;
-  -webkit-appearance: none;
+  padding: 4px 20px;
+  border: none;
   transition: .5s !important;
   display:flex;
   align-items: center;

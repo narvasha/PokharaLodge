@@ -4,7 +4,7 @@ export function Theme() {
   const { setColorScheme, clearColorScheme } = useMantineColorScheme();
 
   return (
-    <Group style={{height:"1000px"}}>
+    <Group style={{height:"100px"}}>
         
       <Button onClick={() => setColorScheme('light')}>Light</Button>
       <Button onClick={() => setColorScheme('dark')}>Dark</Button>
