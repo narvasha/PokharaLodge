@@ -18,10 +18,10 @@ import bookingcom from "../../Images/bookingcom.jpg";
 export default function BestServices() {
   const [activeService, setActiveService] = useState(0);
   const services = [
-    { name: " Mountain View", image: mountain },
-    { name: "Garden", image: garden1 },
-    { name: "Breakfast", image: breakfast1 },
-    { name: "Parking", image: parking1 },
+    { name: " Mountain View", image: mountain ,text:"view" },
+    { name: "Garden", image: garden1 ,text:"garden"},
+    { name: "Breakfast", image: breakfast1 ,text:"bredv"},
+    { name: "Parking", image: parking1 ,text:"mhbtedr"},
   ];
   const images = [view, garden, breakfast, parking];
   const handleIconClick = (index: any) => {
@@ -47,7 +47,7 @@ export default function BestServices() {
     >
       <Title className={classes.title}>The best places to stay</Title>
       <Text className={classes.text}>
-      You have a range of choices when it comes to making reservations,
+        You have a range of choices when it comes to making reservations,
         including platforms like TripAdvisor, Booking.com, Agoda, and
         Hostelworld.The lodge has received multiple awards, including
         TripAdvisor’s Travelers Choice Awards and Certificates of Excellence in
@@ -83,8 +83,7 @@ export default function BestServices() {
                         {service.name}
                       </Title>
                       <Text className={classes.innerParagraph}>
-                        Enjoying the best, clear mountain views from our roof
-                        top.
+                       {service.text}
                       </Text>
                     </div>
                   </div>
@@ -149,19 +148,18 @@ export default function BestServices() {
               >
                 {/* <Text className={classes.count}>3</Text>
                 <Text className={classes.word}>Meeting Rooms</Text> */}
-                <a  href="https://www.agoda.com/new-pokhara-lodge/hotel/pokhara-np.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1719652&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2023-10-5&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=16&los=1&searchrequestid=525c1f69-3f16-427d-84cd-b8b342e25863"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  alignContent: "center",
-                  alignItems: "center",
-                }}>
+                <a
+                  href="https://www.agoda.com/new-pokhara-lodge/hotel/pokhara-np.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1719652&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2023-10-5&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=USD&isFreeOccSearch=false&isCityHaveAsq=false&tspTypes=16&los=1&searchrequestid=525c1f69-3f16-427d-84cd-b8b342e25863"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    alignContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   {" "}
-                  <Image
-                    src={agoda}
-                    style={{width:"50%"}}
-                  />
+                  <Image src={agoda} style={{ width: "50%" }} />
                   <Text className={classes.word}>Book Now</Text>{" "}
                 </a>
               </div>
@@ -177,16 +175,18 @@ export default function BestServices() {
               >
                 {/* <Text className={classes.count}>18</Text>
                 <Text className={classes.word}>Spa</Text> */}
-                <a href="https://www.booking.com/Share-MD44Ltw" style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      flexDirection: "column",
-                      alignContent: "center",
-                      alignItems: "center",
-                    }}>
+                <a
+                  href="https://www.booking.com/Share-MD44Ltw"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    alignContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   {" "}
-                  <Image src={bookingcom} style={{width:"50%"}}
-                  />
+                  <Image src={bookingcom} style={{ width: "50%" }} />
                   <Text className={classes.word}>Book Now</Text>{" "}
                 </a>
               </div>
@@ -202,16 +202,18 @@ export default function BestServices() {
               >
                 {/* <Text className={classes.count}>2</Text>
                 <Text className={classes.word}>Restaurants</Text> */}
-                <a href="https://www.hostelworld.com/pwa/hosteldetails.php/New-Pokhara-Lodge/Pokhara/3590?from=2023-09-27&to=2023-09-30&guests=2"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  alignContent: "center",
-                  alignItems: "center",
-                }}>
+                <a
+                  href="https://www.hostelworld.com/pwa/hosteldetails.php/New-Pokhara-Lodge/Pokhara/3590?from=2023-09-27&to=2023-09-30&guests=2"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    alignContent: "center",
+                    alignItems: "center",
+                  }}
+                >
                   {" "}
-                  <Image src={hostelworld} style={{width:"50%"}} />
+                  <Image src={hostelworld} style={{ width: "50%" }} />
                   <Text className={classes.word}>Book Now</Text>{" "}
                 </a>
               </div>
@@ -219,7 +221,6 @@ export default function BestServices() {
           </SimpleGrid>
         </div>
       </div>
-      
     </div>
   );
 }

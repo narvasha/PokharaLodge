@@ -624,7 +624,7 @@ export default function RoomPage() {
                   >
                     per night
                   </span>
-                  <a style={{ textDecoration: "none" }}>
+                  <Link to="/standard" style={{ textDecoration: "none" }}>
                     <button
                       style={{
                         border: "1px solid #efefef",
@@ -663,7 +663,7 @@ export default function RoomPage() {
                         <FaChevronRight/>
                       </span>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </Grid.Col>
             </Grid>
@@ -1213,7 +1213,7 @@ export default function RoomPage() {
                   >
                     per night
                   </span>
-                  <a style={{ textDecoration: "none" }}>
+                  <Link to="/family" style={{ textDecoration: "none" }}>
                     <button
                       style={{
                         border: "1px solid #efefef",
@@ -1252,7 +1252,7 @@ export default function RoomPage() {
                         <FaChevronRight/>
                       </span>
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </Grid.Col>
             </Grid>
