@@ -8,16 +8,17 @@ import {
     Group,
     ActionIcon,
   } from '@mantine/core';
-  import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
+  import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandTripadvisor, IconBrandBooking, IconBrandFacebook, IconBrandWhatsapp } from '@tabler/icons-react';
   import { ContactIconsList } from './ContactIcons';
   import classes from './ContactUs.module.css';
+import { IconBrandVimeo } from '@tabler/icons-react';
   
-  const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
+  const social = [IconBrandTripadvisor, IconBrandBooking, IconBrandFacebook,IconBrandWhatsapp,IconBrandVimeo];
   
   export function ContactUs() {
     const icons = social.map((Icon, index) => (
-      <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
-        <Icon size="1.4rem" stroke={1.5} />
+      <ActionIcon key={index} size={50} className={classes.social} variant="transparent">
+        <Icon size="5rem" stroke={1.5} />
       </ActionIcon>
     ));
   
@@ -27,7 +28,7 @@ import {
           <div>
             <Title className={classes.title}>Contact us</Title>
             <Text className={classes.description} mt="sm" mb={30}>
-              Leave your email and we will get back to you within 24 hours
+              You can contact us on following platfroms
             </Text>
   
             <ContactIconsList />
@@ -43,14 +44,14 @@ import {
             />
             <TextInput
               label="Name"
-              placeholder="John Doe"
+              placeholder="Narvasha Adhiakri"
               mt="md"
               classNames={{ input: classes.input, label: classes.inputLabel }}
             />
             <Textarea
               required
               label="Your message"
-              placeholder="I want to order your goods"
+              placeholder="I want to book a room"
               minRows={4}
               mt="md"
               classNames={{ input: classes.input, label: classes.inputLabel }}

@@ -14,6 +14,7 @@ import { Standard } from "./Pages/Standard";
 import { Family } from "./Pages/Family";
 import { Gallery } from "./Pages/Gallery";
 import { ContactUs } from "./Pages/ContactUs/ContactUs";
+import { AboutUs } from "./Pages/AboutUs/AboutUs";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <Route path= "family" element={<Family/>}/>
               <Route path= "gallery" element={<Gallery/>}/>
               <Route path= "contact" element={<ContactUs/>}/>
+              <Route path= "about" element={<AboutUs/>}/>
             </Route>
             <Route path="*" element={<Errorpage/>}/>
               

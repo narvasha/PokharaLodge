@@ -74,66 +74,6 @@ const changebackground=()=>{
                 </Link>
               </HoverCard.Target>
 
-              <HoverCard.Dropdown
-                style={{
-                  overflow: "hidden",
-                  width: "150px ",
-                  display: "flex",
-                  flexDirection: "column",
-                  backgroundColor: "lightblue",
-                  borderRadius:0,
-                  padding:0
-                }}
-              >
-                <Link
-                  to="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Modern
-                </Link>
-                <Divider style={{ borderColor: "black" }} />
-                <Link
-                  to="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  City
-                </Link>
-                <Divider style={{ borderColor: "black" }} />
-                <Link
-                  to="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Beach
-                </Link>
-                <Divider style={{ borderColor: "black" }} />
-                <Link
-                  to="#"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                    padding: "10px 15px",
-                    fontFamily: "vollkon",
-                  }}
-                >
-                  Island
-                </Link>
-                <Divider style={{ borderColor: "black" }} />
-              </HoverCard.Dropdown>
             </HoverCard>
             <HoverCard
               width={600}
@@ -143,7 +83,7 @@ const changebackground=()=>{
               withinPortal
             >
               <HoverCard.Target>
-                <Link to="#" className={classes.link}>
+                <Link to="/about" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       About US
@@ -152,7 +92,7 @@ const changebackground=()=>{
                 </Link>
               </HoverCard.Target>
 
-              <HoverCard.Dropdown
+              {/* <HoverCard.Dropdown
                 style={{
                   overflow: "hidden",
                   width: "150px ",
@@ -200,7 +140,7 @@ const changebackground=()=>{
                 </Link>
                 
                 <Divider style={{ borderColor: "black" }} />
-              </HoverCard.Dropdown>
+              </HoverCard.Dropdown> */}
             </HoverCard>
             <HoverCard
               width={600}

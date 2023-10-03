@@ -1,6 +1,7 @@
 import { IconEye, IconEyeDollar, IconFriends, IconMessageCircle, IconMoneybag, IconReportMoney, IconZoomMoney } from '@tabler/icons-react';
 import { Card, Text, Group, Center, rem, useMantineTheme, SimpleGrid, Title } from '@mantine/core';
 import classes from './Room.module.css';
+import { Link } from 'react-router-dom';
 
 export function Room() {
   const theme = useMantineTheme();
@@ -21,7 +22,7 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
-    //   href="https://mantine.dev/"
+      href="/deluxe"
       target="_blank"
     >
       <div
@@ -70,17 +71,21 @@ export function Room() {
         </div>
       </div>
     </Card>
+    
     <Card
       p="lg"
       shadow="lg"
       className={classes.card}
       radius="md"
       component="a"
+      href="/family"
     //   href="https://mantine.dev/"
       target="_blank"
     >
       <div
+      
         className={classes.image}
+        
         style={{
           backgroundImage:
             'url(https://www.pokharalodge.com/wp-content/uploads/2021/03/family-room.jpg)',
@@ -90,6 +95,7 @@ export function Room() {
 
       <div className={classes.content}>
         <div>
+        <Link to="family" className={classes.link}/>
           <Text size="lg" className={classes.title} fw={500}>
           Family Room
           </Text>
@@ -131,7 +137,7 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
-      href="#"
+      href="/standard"
       target="_blank"
     >
       <div
@@ -186,6 +192,7 @@ export function Room() {
       className={classes.card}
       radius="md"
       component="a"
+      href="/semideluxe"
     //   href="https://mantine.dev/"
       target="_blank"
     >
