@@ -3,10 +3,7 @@ import {
   Group,
   Button,
   UnstyledButton,
-  Text,
-  SimpleGrid,
-  ThemeIcon,
-  Anchor,
+ 
   Divider,
   Center,
   Box,
@@ -22,12 +19,7 @@ import { useDisclosure } from "@mantine/hooks";
 
 
 import {
-  IconNotification,
-  IconCode,
-  IconBook,
-  IconChartPie3,
-  IconFingerprint,
-  IconCoin,
+ 
   IconChevronDown,
   IconCalendarEvent,
 } from "@tabler/icons-react";

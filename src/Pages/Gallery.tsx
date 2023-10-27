@@ -1,8 +1,8 @@
-import { Container, Grid, SimpleGrid, Skeleton, rem, Text,Title,Image } from '@mantine/core';
+import { Container, Grid, SimpleGrid, Text,Title,Image } from '@mantine/core';
 import { Link } from 'react-router-dom';
 import hotel from "../../src/assets/Images/Garden.jpg"
 import parking from "../../src/assets/Images/parking.jpg";
-import breakfast from "../../src/assets/Images/breakfasttable.jpg";
+
 
 import photo1 from "../../src/assets/Images/some-beautiful-photos.jpg";
 
@@ -12,16 +12,13 @@ import photo2 from "../../src/assets/Images/full-building-picture.jpg";
 
 import photo3 from "../../src/assets/Images/latest-photos-from-new.jpg";
 
-import photo4 from "../../src/assets/Images/flower-and-garden-of.jpg";
-
-import photo5 from "../../src/assets/Images/best-mountain-view-from.jpg";
 
 
 import view from "../../src/assets/Images/view.jpg";
-const PRIMARY_COL_HEIGHT = rem(300);
+
 
 export function Gallery() {
-  const SECONDARY_COL_HEIGHT = `calc(${PRIMARY_COL_HEIGHT} / 2 - var(--mantine-spacing-md) / 2)`;
+ 
 
   return (
     <div>  

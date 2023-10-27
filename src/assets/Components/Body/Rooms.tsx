@@ -1,4 +1,4 @@
-import { IconEye, IconEyeDollar, IconFriends, IconMessageCircle, IconMoneybag, IconReportMoney, IconZoomMoney } from '@tabler/icons-react';
+import {  IconReportMoney,} from '@tabler/icons-react';
 import { Card, Text, Group, Center, rem, useMantineTheme, SimpleGrid, Title } from '@mantine/core';
 import classes from './Room.module.css';
 import { Link } from 'react-router-dom';

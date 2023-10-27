@@ -8,7 +8,7 @@ import {
     Group,
     ActionIcon,
   } from '@mantine/core';
-  import { IconBrandTwitter, IconBrandYoutube, IconBrandInstagram, IconBrandTripadvisor, IconBrandBooking, IconBrandFacebook, IconBrandWhatsapp } from '@tabler/icons-react';
+  import { IconBrandTripadvisor, IconBrandBooking, IconBrandFacebook, IconBrandWhatsapp } from '@tabler/icons-react';
   import { ContactIconsList } from './ContactIcons';
   import classes from './ContactUs.module.css';
 import { IconBrandVimeo } from '@tabler/icons-react';

@@ -3,12 +3,11 @@ import {
   Text,
   Container,
   Grid,
-  GridCol,
-  Flex,
+  
   SimpleGrid,
 } from "@mantine/core";
 import { Link } from "react-router-dom";
-import garden from "../assets/Images/Garden.jpg";
+
 import deluxe from "../assets/Images/deluxroom.jpg"
 import standard from "../assets/Images/standardroom.jpg"
 import semideluxe from "../assets/Images/semideluxe.jpg"

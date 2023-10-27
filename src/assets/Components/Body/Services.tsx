@@ -1,7 +1,7 @@
 import { Image, SimpleGrid, Text, Title } from "@mantine/core";
-import manHall from "../../Images/hotel.jpg";
+
 import classes from "./Services.module.css";
-import pool from "../../Images/pool.png";
+
 import mountain from "../../Images/mountain.png";
 import garden1 from "../../Images/garden.png";
 import parking1 from "../../Images/parking.png";

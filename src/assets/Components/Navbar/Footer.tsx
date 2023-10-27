@@ -1,4 +1,4 @@
-import { Text, Container, ActionIcon, Group, rem, Overlay } from '@mantine/core';
+import { Text, Container, ActionIcon, Group, rem, } from '@mantine/core';
 import {  IconBrandInstagram, IconBrandFacebook, IconBrandGmail } from '@tabler/icons-react';
 
 import classes from './FooterLinks.module.css';

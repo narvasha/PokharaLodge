@@ -1,5 +1,5 @@
 
-import { Container, Grid,  Skeleton, Title, rem,Text, SimpleGrid } from '@mantine/core';
+import { Container,  Title,Text, SimpleGrid } from '@mantine/core';
 import { Link } from 'react-router-dom';
 import {  Card, Image,  AspectRatio } from '@mantine/core';
 import classes from './Deluxe.module.css';
