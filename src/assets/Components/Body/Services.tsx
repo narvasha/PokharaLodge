@@ -20,8 +20,8 @@ export default function BestServices() {
   const services = [
     { name: " Mountain View", image: mountain ,text:"view" },
     { name: "Garden", image: garden1 ,text:"garden"},
-    { name: "Breakfast", image: breakfast1 ,text:"bredv"},
-    { name: "Parking", image: parking1 ,text:"mhbtedr"},
+    { name: "Breakfast", image: breakfast1 ,text:"bre"},
+    { name: "Parking", image: parking1 ,text:"parking space"},
   ];
   const images = [view, garden, breakfast, parking];
   const handleIconClick = (index: any) => {

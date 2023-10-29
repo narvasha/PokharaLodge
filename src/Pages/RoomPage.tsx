@@ -128,7 +128,7 @@ export default function RoomPage() {
                     color: "#607991",
                   }}
                 >
-                  Muskan is don
+                   Hotel have only 2 deluxe room on the top floor with excellent Annapurna mountain range with Fishtail mountain views
                 </p>
                 <div
                   style={{
@@ -440,7 +440,7 @@ export default function RoomPage() {
                     color: "#607991",
                   }}
                 >
-                  Muskan is don
+                 Standard Double or Twin Room at Hotel New Pokhara Lodge Lakeside Pokhara. Carpeted rooms with wooden furnishings come with a cable TV and wardrobe.
                 </p>
                 <div
                   style={{
@@ -734,7 +734,7 @@ export default function RoomPage() {
                     color: "#607991",
                   }}
                 >
-                  Muskan is don
+                 Superior Double or Twin Room with Terrace located in the new building south of existing building on the first floor.
                 </p>
                 <div
                   style={{
@@ -1030,7 +1030,7 @@ export default function RoomPage() {
                     color: "#607991",
                   }}
                 >
-                  Muskan is don
+                  New Pokhara Lodge in Lakeside Pokhara offer Family room with attached bathroom. It has 1 double bed and 2 single beds so 4 to 5 people of a family can easily accommodate.
                 </p>
                 <div
                   style={{

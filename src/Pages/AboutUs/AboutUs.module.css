@@ -1,7 +1,7 @@
 .inner {
     display: flex;
     justify-content: space-between;
-    padding-top: calc(var(--mantine-spacing-xl) * 4);
+    padding-top: calc(var(--mantine-spacing-l) * 4);
     padding-bottom: calc(var(--mantine-spacing-xl) * 4);
   }
   
@@ -34,8 +34,8 @@
   }
   
   .image {
-    width: rem(376px);
-    height: rem(356px);
+    width: rem(800px);
+    height: rem(500px);
   
     @media (max-width: $mantine-breakpoint-md) {
       display: none;
@@ -43,7 +43,7 @@
   }
   
   .highlight {
-    position: relative;
+    /* position: relative; */
     background-color: var(--mantine-color-blue-light);
     border-radius: var(--mantine-radius-sm);
     padding: rem(4px) rem(12px);

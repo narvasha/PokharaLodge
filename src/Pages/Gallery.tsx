@@ -7,11 +7,12 @@ import parking from "../../src/assets/Images/parking.jpg";
 import photo1 from "../../src/assets/Images/some-beautiful-photos.jpg";
 
 
-import photo2 from "../../src/assets/Images/full-building-picture.jpg";
+import photo2 from "../../src/assets/Images/flowerandgarden.jpg";
 
 
 import photo3 from "../../src/assets/Images/latest-photos-from-new.jpg";
-
+import dashain from "../../src/assets/Images/dashain.png";
+import dashain2 from "../../src/assets/Images/dashain2.png";
 
 
 import view from "../../src/assets/Images/view.jpg";
@@ -62,26 +63,12 @@ export function Gallery() {
       </div>  
       <Container my="md" style={{maxWidth:"90%"}}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
-      <Image src={photo2} />
+      <Image src={dashain2} />
         <Grid gutter="md">
-          <Grid.Col>
-          <Image src={photo1} />
-            
-          </Grid.Col>
-          <Grid.Col span={12}>
+          <Grid.Col >
           <Image src={photo3} />
-          </Grid.Col>
+            
           
-        </Grid>
-      </SimpleGrid>
-    </Container>
-    <Container my="md" style={{maxWidth:"90%"}}>
-      <SimpleGrid cols={{ base: 3, sm: 2}} spacing="md">
-      <Image src={hotel} />
-        <Grid gutter="md">
-          
-          <Grid.Col span={12}>
-          <Image src={view} />
             {/* <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} /> */}
           </Grid.Col>
         </Grid>
@@ -89,10 +76,10 @@ export function Gallery() {
     </Container>
     <Container my="md" style={{maxWidth:"90%"}}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
-      <Image src={hotel} />
+      <Image src={dashain} />
         <Grid gutter="md">
-          <Grid.Col span={16}>
-          <Image src={parking} />
+          <Grid.Col >
+          <Image src={hotel} />
             
           
             {/* <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} /> */}
@@ -100,6 +87,33 @@ export function Gallery() {
         </Grid>
       </SimpleGrid>
     </Container>
+    <Container my="md" style={{maxWidth:"90%"}}>
+      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
+      <Image src={parking} />
+        <Grid gutter="md">
+          <Grid.Col >
+          <Image src={photo1} />
+            
+          
+            {/* <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} /> */}
+          </Grid.Col>
+        </Grid>
+      </SimpleGrid>
+    </Container>
+    <Container my="md" style={{maxWidth:"90%"}}>
+      <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="md">
+      <Image src={view} />
+        <Grid gutter="md">
+          <Grid.Col >
+          <Image src={photo2} />
+            
+          
+            {/* <Skeleton height={SECONDARY_COL_HEIGHT} radius="md" animate={false} /> */}
+          </Grid.Col>
+        </Grid>
+      </SimpleGrid>
+    </Container>
+    
     </div>
   );
 }
