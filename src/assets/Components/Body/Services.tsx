@@ -103,8 +103,8 @@ export default function BestServices() {
         >
           <div
             style={{
-              width: "75%",
-              display: "flex",
+              width: "100%",
+              
               position: "relative",
               margin: "20px",
             }}
